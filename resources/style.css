@@ -173,6 +173,7 @@ h5 {
     }
     .flex {
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
     #left_part, #right_part{
         width: 100% !important;
