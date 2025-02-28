@@ -188,6 +188,11 @@ h5 {
     #right_in {
         width: 90% !important;
     }
+    #pic {
+        width: 90% !important;
+        padding-left: 5% !important;
+        border: 0px !important;
+    }
     .flex > .info3:nth-child(2) {
         display: none;
     }
