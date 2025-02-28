@@ -159,6 +159,9 @@ h5 {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
+    p {
+        text-indent:6em;
+    }
 }
 
 .lists {
@@ -196,5 +199,8 @@ h5 {
     }
     b {
         font-size: 1.25em;
+    }
+    .list > p {
+        text-indent: 0em;
     }
 }
