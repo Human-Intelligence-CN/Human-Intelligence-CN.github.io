@@ -203,4 +203,16 @@ h5 {
     .list p {
         text-indent: 0em;
     }
+    .leftl {
+        display: none;
+    }
+    .rightf {
+        float: none;
+        display: grid;
+        place-items: center
+    }
+    .info {
+        width: 90% !important;
+        padding-left: 5% !important;
+    }
 }
