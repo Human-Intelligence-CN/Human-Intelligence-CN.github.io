@@ -1,0 +1,198 @@
+.top {
+    background: #202020;
+    color: #EEEEEE;
+    padding: 10px 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    background: #EEEEEE;
+}
+
+.rights {
+    text-align: right;
+}
+
+.rightf {
+    float: right;
+}
+
+a {
+    text-decoration: none
+}
+.a1 {
+    margin-right: 40px
+}
+.a1:link {
+    color: #EEEEEE;
+}
+
+.a1:visited {
+    color: #EEEEEE;
+}
+
+.a1:hover {
+    color: #BBBBBB;
+}
+
+.a1:active {
+    color: #BBBBBB;
+}
+
+.a2:link {
+    color: #707070;
+}
+
+.a2:visited {
+    color: #707070;
+}
+
+.a2:hover {
+    color: #A0A0A0;
+}
+
+.a2:active {
+    color: #A0A0A0;
+}
+
+.a3:link {
+    color: #0077EE;
+}
+
+.a3:visited {
+    color: #0077EE;
+}
+
+.a3:hover {
+    color: #00AAFF;
+}
+
+.a3:active {
+    color: #00AAFF;
+}
+
+.info {
+    width: 40%;
+    text-align: left;
+    padding-left: 250px;
+}
+
+.info2 {
+    width: 40%;
+    text-align: right;
+    padding-right: 0px;
+    float: right;
+}
+
+.info3 {
+    width: 40%;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.leftl {
+    position: fixed;
+    left: 10px;
+    text-align: left;
+    width: auto;
+    background: #BBBBBB;
+    float: left;
+    z-index: 5;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background: #EEEEEE;
+    font-family: Arial, sans-serif;
+    color: #202020;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 1em;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px 20px;
+}
+
+.list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.lists {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media (max-width: 768px) or (orientation : portrait){
+    .logo span {
+        font-size: 2em;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    #left_part, #right_part{
+        width: 100% !important;
+    }
+    #mid_part {
+        width: 100% !important;
+        height: 5% !important;
+    }
+    #right_in {
+        width: 90% !important;
+    }
+    .flex > .info3:nth-child(2) {
+        display: none;
+    }
+    a {
+        font-size: 1.25em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    b {
+        font-size: 1.25em;
+    }
+}

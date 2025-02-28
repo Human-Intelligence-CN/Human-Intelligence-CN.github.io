@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="baidu-site-verification" content="XYJICMSo19" />
+	<link rel="shortcut icon" href="./2.png" />
+	<title>清遥主页</title>
+	<meta name="keywords" content="主页,blog" />
+	<meta name="description" content="欢迎进入清遥singal的个人主页" />
+	<meta name="author" content="清遥Singal" />
+	<link rel="stylesheet" type="text/css" href="./resources/style.css">
+	<style type="text/css">
+		input.bdbtn {
+			width: 65px;
+			height: 30px;
+			line-height: 30px;
+			font: 14px \5b8b\4f53;
+			cursor: pointer;
+			outline: none;
+			display: inline-block;
+			text-align: center;
+			color: #EEEEEE;
+			border: none;
+			background-color: #202020;
+		}
+
+		input.bdtext {
+			width: 60%;
+			padding-left: 5px;
+			margin-left: 10px;
+			margin-right: 10px;
+			height: 30px;
+			line-height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header class="top">
+        <div class="logo">
+            <img src="./3.png" alt="图标" width="50" height="50" />
+            <span>清遥主页</span>
+        </div>
+        <a class="a1" href="./index.html">进入首页</a>
+    </header>
+	<center>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div align="center">
+			<h4>使用简洁主页，成就高效人生</h4>
+		</div>
+		<div style='overflow:hidden'>
+			<form onsubmit="return baiduWithHttps(this)" action="https://www.baidu.com/baidu" target="_blank">
+				<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w" autocomplete="off">
+				<input class='bdtext' type="text" onfocus="checkHttps" name="word" size="80" autocomplete="off">
+				<input class='bdbtn' type="submit" value="搜索" autocomplete="off">
+			</form>
+			<script>
+				(function () {
+					// 初始化 BaiduHttps 对象
+					var BaiduHttps = window.BaiduHttps = { _option: {} };
+
+					// 初始化检查函数
+					var initCheck = function () {
+						if (isNotIE6()) {
+							loadHttpsCheckScript();
+						} else {
+							setProtocol("http");
+						}
+					};
+
+					// 检查是否不是 IE6
+					function isNotIE6() {
+						var userAgent = navigator && navigator.userAgent ? navigator.userAgent : "";
+						var ie6Regex = /msie 6/i;
+						return !ie6Regex.test(userAgent);
+					}
+
+					// 加载 HTTPS 检查脚本
+					function loadHttpsCheckScript() {
+						appendScript({ url: "https://www.baidu.com/con" });
+					}
+
+					// 设置协议和检查状态
+					function setProtocol(protocol) {
+						BaiduHttps._option.protocol = protocol;
+						BaiduHttps._option.checked = true;
+					}
+
+					// 生成时间戳（16进制）
+					function generateTimestampHex() {
+						return new Date().getTime().toString(16);
+					}
+
+					// 动态添加脚本
+					function appendScript(options) {
+						var url = options.url || "https://www.baidu.com/con";
+						var script = document.createElement("script");
+						script.onload = function () { };
+						script.onerror = function () { setProtocol("http"); }; // 失败时使用 HTTP
+						script.src = url + "?from=" + options.tn;
+						document.body.appendChild(script);
+					}
+
+					// 处理脚本回调
+					BaiduHttps.handleCallback = function (data) {
+						if (typeof data === "object") {
+							if (data.s == 0) {
+								setProtocol("https"); // 状态 0 表示支持 HTTPS
+							} else {
+								setProtocol("http");
+							}
+						}
+					};
+
+					// 检查并返回 HTTPS 状态
+					BaiduHttps.useHttps = function () {
+						if (this._option.timeout === true) {
+							initCheck(); // 重新触发检查
+							this._option.timeout = false;
+							setTimeout(function () { BaiduHttps._option.timeout = true; }, 1000 * 120); // 120秒后允许重新检查
+						}
+						if (this._option.checked && this._option.protocol == "https") {
+							return { s: 1, ssl_code: "ssl10_" + generateTimestampHex() };
+						} else {
+							return { s: 0, ssl_code: "ssl9_" + generateTimestampHex() };
+						}
+					};
+
+					// 初始调用检查
+					initCheck();
+				})();
+			</script>
+			<script>
+				function checkHttps() {
+					BaiduHttps.useHttps();
+				};
+				function baiduWithHttps(formname) {
+					var data = BaiduHttps.useHttps();
+					if (data.s === 0) {
+						return true;
+					}
+					else {
+						formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+						return true;
+					}
+				};
+			</script>
+		</div>
+	</center>
+	<br />
+	<div style="float:left;width:31%;margin-left:1%;">
+		<br />
+		<div style="text-align:center">
+			<b>个人娱乐</b>
+			<br />
+			<a class="a2" href="https://yuc.wiki/">yuC的番剧资讯</a>
+			<br />
+			<a class="a2" href="https://www.bilibili.com/">哔哩哔哩动画</a>
+			<br />
+			<a class="a2" href="https://www.cycity.pro/">次元城CYCITY</a>
+			<br />
+			<a class="a2" href="https://jocy.tw/">囧次元</a>
+			<br />
+			<a class="a2" href="http://age.tv/">AGE动漫</a>
+			<br />
+			<a class="a2" href="https://mxdm.tv/">MX动漫</a>
+			<br />
+			<a class="a2" href="http://www.zzzfun.one/">ZzzFun</a>
+			<br />
+			<a class="a2" href="https://xingye.me/game/index.php">星夜小游戏平台</a>
+			<br />
+			<a class="a2" href="https://anitabi.cn/map">动画巡礼</a>
+			<br />
+		</div>
+	</div>
+	<div style="float:left;width:34%;margin-left:1%">
+		<br />
+		<div style="text-align:center">
+			<b>学习</b>
+			<br />
+			<a class="a2" href="https://basic.smartedu.cn/tchMaterial">国家中小学智慧教育平台</a>
+			<br />
+			<a class="a2" href="https://wx.qq.com/index.php">微信网页版</a>
+		</div>
+	</div>
+	</div>
+	<div style="float:right;width:31%;;margin-right: 1%">
+		<br />
+		<div style="text-align:center">
+			<b>其他</b>
+			<br />
+			<a class="a2" href="./projects/4/index.html">音乐破解</a>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div class="div_foot">
+		<footer>
+			<span>
+				<p>关注<a class="a2" href="https://space.bilibili.com/314017356">清遥Singal</a>谢谢喵</p>
+			</span>
+			<span>
+				<p>什么？<a class="a2" href="https://omoget.com">OMOFUN</a>打赢复活赛了</p>
+			</span>
+		</footer>
+	</div>
+</body>
+
+</html>
