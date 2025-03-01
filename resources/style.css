@@ -30,10 +30,10 @@ footer {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 .a1 {
-    margin-right: 40px
+    margin-right: 40px;
 }
 .a1:link {
     color: #EEEEEE;
@@ -169,6 +169,9 @@ h5 {
     margin: 0 auto;
     text-align: left;
 }
+#a11 {
+    margin-right: 0px;
+}
 
 @media (max-width: 768px) and (orientation : portrait){
     .logo span {
@@ -193,6 +196,13 @@ h5 {
         padding-left: 5% !important;
         border: 0px !important;
     }
+    #slash {
+        display: none;
+    }
+    #a11 {
+        margin-right: 40px !important;
+    }
+    
     .flex > .info3:nth-child(2) {
         display: none;
     }
