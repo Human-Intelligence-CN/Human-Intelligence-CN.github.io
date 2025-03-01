@@ -20,7 +20,10 @@ footer {
     width: 100%;
     background: #EEEEEE;
 }
-
+#slash {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .rights {
     text-align: right;
 }
