@@ -1,0 +1,22 @@
+input.bdbtn {
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    font: 14px \5b8b\4f53;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    color: #EEEEEE;
+    border: none;
+    background-color: #202020;
+}
+
+input.bdtext {
+    width: 60%;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
