@@ -108,12 +108,13 @@ a {
 
 .leftl {
     position: fixed;
-    left: 10px;
     text-align: left;
     width: auto;
     background: #BBBBBB;
     float: left;
     z-index: 5;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .flex {
